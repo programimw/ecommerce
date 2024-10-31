@@ -6,16 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Profile</title>
+    <title>INSPINIA | User list</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
+
 <div id="wrapper">
 
     <nav class="navbar-default navbar-static-side" role="navigation">
@@ -27,9 +29,9 @@
                              </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong
-                                        class="font-bold">David Williams</strong>
+                                            class="font-bold">David Williams</strong>
                              </span> <span class="text-muted text-xs block">Art Director <b
-                                        class="caret"></b></span> </span> </a>
+                                            class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             <li><a href="profile.html">Profile</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
@@ -43,10 +45,10 @@
                     </div>
                 </li>
                 <li>
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span
-                            class="fa arrow"></span></a>
+                    <a href="index.php"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="index.php">Dashboard v.1</a></li>
                         <li><a href="dashboard_2.html">Dashboard v.2</a></li>
                         <li><a href="dashboard_3.html">Dashboard v.3</a></li>
                         <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
@@ -58,7 +60,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="graph_flot.html">Flot Charts</a></li>
                         <li><a href="graph_morris.html">Morris.js Charts</a></li>
@@ -72,7 +74,7 @@
                 </li>
                 <li>
                     <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span
-                            class="label label-warning pull-right">16/24</span></a>
+                                class="label label-warning pull-right">16/24</span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="mailbox.html">Inbox</a></li>
                         <li><a href="mail_detail.html">Email view</a></li>
@@ -88,7 +90,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="form_basic.html">Basic form</a></li>
                         <li><a href="form_advanced.html">Advanced Plugins</a></li>
@@ -101,13 +103,13 @@
                 </li>
                 <li class="active">
                     <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span> <span
-                            class="pull-right label label-primary">SPECIAL</span></a>
+                                class="pull-right label label-primary">SPECIAL</span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="contacts.html">Contacts</a></li>
-                        <li class="active"><a href="profile.html">Profile</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                         <li><a href="profile_2.html">Profile v.2</a></li>
                         <li><a href="contacts_2.html">Contacts v.2</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li class="active"><a href="projects.html">Projects</a></li>
                         <li><a href="project_detail.html">Project detail</a></li>
                         <li><a href="activity_stream.html">Activity stream</a></li>
                         <li><a href="teams_board.html">Teams board</a></li>
@@ -127,7 +129,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="search_results.html">Search results</a></li>
                         <li><a href="lockscreen.html">Lockscreen</a></li>
@@ -143,7 +145,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span
-                            class="label label-info pull-right">NEW</span></a>
+                                class="label label-info pull-right">NEW</span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="toastr_notifications.html">Notification</a></li>
                         <li><a href="nestable_list.html">Nestable list</a></li>
@@ -177,7 +179,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="typography.html">Typography</a></li>
                         <li><a href="icons.html">Icons</a></li>
@@ -198,7 +200,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="table_basic.html">Static Tables</a></li>
                         <li><a href="table_data_tables.html">Data Tables</a></li>
@@ -208,7 +210,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="ecommerce_products_grid.html">Products grid</a></li>
                         <li><a href="ecommerce_product_list.html">Products list</a></li>
@@ -221,7 +223,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
                         <li><a href="slick_carousel.html">Slick Carousel</a></li>
@@ -231,7 +233,7 @@
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span
-                            class="fa arrow"></span></a>
+                                class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li>
                             <a href="#">Third Level <span class="fa arrow"></span></a>
@@ -257,7 +259,8 @@
                 </li>
                 <li>
                     <a href="css_animation.html"><i class="fa fa-magic"></i> <span
-                            class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+                                class="nav-label">CSS Animations </span><span
+                                class="label label-info pull-right">62</span></a>
                 </li>
                 <li class="landing_link">
                     <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>
@@ -273,7 +276,7 @@
 
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
-            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
                     </a>
@@ -397,92 +400,73 @@
             </nav>
         </div>
         <div class="row wrapper border-bottom white-bg page-heading">
-            <div class="col-lg-10">
-                <h2>Profile</h2>
+            <div class="col-sm-4">
+                <h2>Project list</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a>Extra Pages</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li class="active">
-                        <strong>Profile</strong>
+                        <strong>Users list</strong>
                     </li>
                 </ol>
             </div>
-            <div class="col-lg-2">
-
-            </div>
         </div>
-        <div class="wrapper wrapper-content">
-            <div class="row animated fadeInRight">
-                <div class="col-md-4">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Your photo</h5>
-                        </div>
-                        <div>
-                            <div class="ibox-content no-padding border-left-right">
-                                <img alt="image" class="img-responsive" src="img/profile_big.jpg">
-                                <input type="file">
-                            </div>
-                            <div class="ibox-content profile-content">
-                                <h4><strong>Emri Mbiemri</strong></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Profile Data</h5>
-                            <div class="ibox-tools">
-                                <a class="collapse-link">
-                                    <i class="fa fa-chevron-up"></i>
-                                </a>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated fadeInUp">
+
+                    <div class="ibox">
                         <div class="ibox-content">
-                            <div class="row">
-                                <div class="col-sm-12 b-r"><h3 class="m-t-none m-b">Update your profile data here</h3>
-                                    <form role="form">
-                                        <div class="form-group"><label>Name</label>
-                                            <input type="text"
-                                                   placeholder="Enter name"
-                                                   class="form-control">
-                                        </div>
-                                        <div class="form-group"><label>Surname</label>
-                                            <input type="text"
-                                                   placeholder="Enter surname"
-                                                   class="form-control">
-                                        </div>
-                                        <div class="form-group"><label>Email</label>
-                                            <input type="email"
-                                                   placeholder="Enter email"
-                                                   class="form-control">
-                                        </div>
-                                        <div class="form-group"><label>Email</label>
-                                            <input type="email"
-                                                   placeholder="Enter email"
-                                                   class="form-control">
-                                        </div>
-                                        <div class="form-group"><label>Password</label>
-                                            <input type="password"
-                                                   placeholder="Password"
-                                                   class="form-control">
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-xl btn-primary pull-left m-t-n-s" type="submit">
-                                                <strong>Save</strong></button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <!--                            <div class="row m-b-sm m-t-sm">-->
+                            <!--                                <div class="col-md-1">-->
+                            <!--                                    <button type="button" id="loading-example-btn" class="btn btn-white btn-sm" ><i class="fa fa-refresh"></i> Refresh</button>-->
+                            <!--                                </div>-->
+                            <!--                                <div class="col-md-11">-->
+                            <!--                                    <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">-->
+                            <!--                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+
+                            <div class="float-e-margins">
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>Nr</th>
+                                        <th>Name</th>
+                                        <th>Surname</th>
+                                        <th>Email</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Test Emri</td>
+                                        <td>Test Mbiemri</td>
+                                        <td>test@test.com</td>
+                                        <td><input type="button"  class="btn btn-warning" value="Edit"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Test Emri</td>
+                                        <td>Test Mbiemri</td>
+                                        <td>test@test.com</td>
+                                        <td><input type="button"  class="btn btn-warning" value="Edit"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Test Emri</td>
+                                        <td>Test Mbiemri</td>
+                                        <td>test@test.com</td>
+                                        <td><input type="button"  class="btn btn-warning" value="Edit"></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
                             </div>
-
-                            <!--                            <button class="btn btn-primary btn-block m"><i class="fa fa-arrow-down"></i> Update-->
-                            <!--                            </button>-->
-
                         </div>
                     </div>
                 </div>
@@ -500,10 +484,9 @@
     </div>
 </div>
 
-
 <!-- Mainly scripts -->
 <script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
@@ -511,12 +494,34 @@
 <script src="js/inspinia.js"></script>
 <script src="js/plugins/pace/pace.min.js"></script>
 
-<!-- Peity -->
-<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<script>
+    $(document).ready(function () {
 
-<!-- Peity -->
-<script src="js/demo/peity-demo.js"></script>
+        $('#loading-example-btn').click(function () {
+            btn = $(this);
+            simpleLoad(btn, true)
 
+            // Ajax example
+//                $.ajax().always(function () {
+//                    simpleLoad($(this), false)
+//                });
+
+            simpleLoad(btn, false)
+        });
+    });
+
+    function simpleLoad(btn, state) {
+        if (state) {
+            btn.children().addClass('fa-spin');
+            btn.contents().last().replaceWith(" Loading");
+        } else {
+            setTimeout(function () {
+                btn.children().removeClass('fa-spin');
+                btn.contents().last().replaceWith(" Refresh");
+            }, 2000);
+        }
+    }
+</script>
 </body>
 
 </html>
