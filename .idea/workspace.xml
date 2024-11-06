@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="922d1abd-acf7-4fff-b318-d2c871fcb2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Leksione/JS_1/scrips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Leksione/JS_1/shembuj.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Leksione/JS_1/scrips.js" beforeDir="false" afterPath="$PROJECT_DIR$/Leksione/JS_1/scrips.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <workItem from="1730242425630" duration="2418000" />
       <workItem from="1730245015412" duration="193000" />
       <workItem from="1730245289203" duration="47000" />
-      <workItem from="1730707126669" duration="3499000" />
+      <workItem from="1730707126669" duration="4767000" />
     </task>
     <servers />
   </component>

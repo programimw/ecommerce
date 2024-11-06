@@ -30,8 +30,6 @@
 // document.write("</tbody>");
 // document.write("</table>");
 
-
-
 function saveData (){
     window.alert("Butoni u kliku");
 
