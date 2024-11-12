@@ -19,392 +19,144 @@
     <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
 </head>
 <body class="white-bg">
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
-    <div class="container-fluid">
-        <a class="navbar-brand align-self-start" href="#">E-commerce</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse align-items-start" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active px-4" href="#" role="button">Category 1</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active px-4" href="#" role="button">Category 1</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active px-4" href="#" role="button">Category 1</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active px-4" href="#" role="button">Category 1</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Subcategory 1</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 2</a></li>
-                        <li><a class="dropdown-item" href="#">Subcategory 3</a></li>
-                    </ul>
-                </li>
+<?php include 'user/components/navbar.php'; ?>
+
+<div class="position-relative overflow-hidden p-md-5 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Punny headline</h1>
+        <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    </div>
+    <div class="product-device box-shadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 pl-md-3">
+    <div class="bg-dark mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-primary mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 col-lg-6 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-white box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex gap-3">
+                <li class="fa fa-facebook"><a class="link-body-emphasis" href="#"></a></li>
+                <li class="fa fa-instagram"><a class="link-body-emphasis" href="#"></a></li>
+                <li class="fa fa-twitter"><a class="link-body-emphasis" href="#"></a></li>
             </ul>
-            <form class="d-flex align-top" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
-    </div>
-</nav>
-
-<div class="wrapper wrapper-content animated fadeInRight">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="ibox">
-                <div class="ibox-content product-box">
-
-                    <div class="product-imitation">
-                        [ INFO ]
-                    </div>
-                    <div class="product-desc">
-                                <span class="product-price">
-                                    $10
-                                </span>
-                        <small class="text-muted">Category</small>
-                        <a href="#" class="product-name"> Product</a>
-
-
-                        <div class="small m-t-xs">
-                            Many desktop publishing packages and web page editors now.
-                        </div>
-                        <div class="m-t text-righ">
-
-                            <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i
-                                        class="fa fa-long-arrow-right"></i> </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </footer>
 </div>
 </body>
 </html>
