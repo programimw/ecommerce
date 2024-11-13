@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Ushtrimi 1</title>
+
+    <style>
+        .td-style {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<body>
+<!--    <p id = "showData"></p>-->
+<script>
+
+    var price = [0,0,0,0,0];
+    var sasiaProdukteve = [0,0,0,0,0];
+    var cmimi = [2.98, 4.5, 9.98, 4.49, 6.88]
+    var totalCmimi = 0;
+    var totalSasia = 0;
+
+    while (1){
+        var code = parseInt(window.prompt("Vendosni kodin e produktit [1-5]"));
+
+        if (code > 5 || code < 0){
+            window.alert("Kodi i gabuar. Kodi i produktit duhet te jete [1-5]");
+            continue;
+        }
+
+        if (code == 0){
+            displayResult();
+            break;
+        }
+
+        var sasia = parseInt(window.prompt("Vendosni Sasine e produktit: "+code+":"));
+        sasiaProdukteve[code-1] += sasia;
+        totalSasia += sasia;
+
+        price[code-1] += sasia * cmimi[code-1];
+        totalCmimi += sasia * cmimi[code-1];
+    }
+
+    function displayResult(){
+        var conent = "<h1>Shitjet sipas produktit, sasise dhe cmimit</h1>\n" +
+                      "<table class='td-style'>\n" +
+                      "    <thead>\n" +
+                      "        <tr>\n" +
+                      "            <th class='td-style'>Produkti</th>\n" +
+                      "            <th class='td-style'>Sasia</th>\n" +
+                      "            <th class='td-style'>Cmimi/njesi</th>\n" +
+                      "            <th class='td-style'>Cmimi total</th>\n" +
+                      "        </tr>\n" +
+                      "    </thead>\n" +
+                      "    <tbody>\n";
+
+
+        for (var i = 1; i <= 5; i++){
+            conent += "<tr>" +
+                        "<td class='td-style'>"+i+"</td>"+
+                        "<td class='td-style'>"+sasiaProdukteve[i-1]+"</td>"+
+                        "<td class='td-style'>"+cmimi[i-1]+"</td>"+
+                        "<td class='td-style'>"+price[i-1]+"</td>"+
+                       "</tr>";
+        }
+
+        conent += "</tbody>" +
+                  "<tfoot>\n" +
+                    "    <tr>\n" +
+                    "        <td class='td-style'>Totali</td>\n" +
+                    "        <td class='td-style'>"+totalSasia+"</td>\n" +
+                    "        <td class='td-style'></td>\n" +
+                    "        <td class='td-style'>"+totalCmimi+"</td>\n" +
+                    "    </tr>\n" +
+                    "</tfoot>"
+        conent += "</table>";
+
+        document.write(conent);
+        return;
+    }
+
+</script>
+
+</body>
+</html>
