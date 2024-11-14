@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Ushtrimi 1</title>
+
+    <style>
+        .td-style{
+            border: 1px solid black;
+            text-align: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    var results = [0,0,0,0,0,0,0,0,0,0,0];
+
+    for (var i = 0; i< 36000; i++){
+        var rez1 = hidhZarin();
+        var rez2 = hidhZarin();
+
+        var shuma =  hidhZarin()+hidhZarin();
+
+        results[shuma - 2] ++;
+    }
+    showData();
+    function hidhZarin(){
+        return Math.floor(1+ Math.random()*6);
+    }
+
+
+    function showData(){
+        var content =
+            "<table>\n" +
+            "    <thead>\n" +
+            "        <tr>\n" +
+            "            <th class='td-style'>Rezultati I hedhjes</th>\n" +
+            "            <th class='td-style'>Numri I hedhjeve</th>\n" +
+            "        </tr>\n" +
+            "    </thead>\n" +
+            "<tbody>";
+
+        for (var i = 0; i<results.length; i++){
+            content +="<tr>" +
+                "<td class='td-style'>"+(i+2)+"</td>"+
+                "<td class='td-style'>"+results[i]+"</td>"+
+                "</tr>";
+        }
+
+        content += "</tbody>";
+        content += "</table>";
+        document.writeln(content);
+    }
+
+</script>
+
+</body>
+
+
+
+</html>
