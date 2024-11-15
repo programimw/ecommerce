@@ -8,11 +8,11 @@
 
     <title>Admin | User list</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
 
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -21,22 +21,22 @@
 <div id="wrapper">
 
     <!-- Sidebar menu -->
-    <?php include 'admin/components/sidebar.php'; ?>
+    <?php include 'components/sidebar.php'; ?>
 
     <div id="page-wrapper" class="gray-bg">
 
         <!-- Top bar -->
-        <?php include 'admin/components/topBar.php'; ?>
+        <?php include 'components/topBar.php'; ?>
 
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-sm-4">
-                <h2>Project list</h2>
+                <h2>Users</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="../index.php">Admin</a>
                     </li>
                     <li class="active">
-                        <strong>Users list</strong>
+                        <strong>Users</strong>
                     </li>
                 </ol>
             </div>
@@ -114,14 +114,14 @@
 </div>
 
 <!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
+<script src="../js/inspinia.js"></script>
+<script src="../js/plugins/pace/pace.min.js"></script>
 
 <script>
     $(document).ready(function () {

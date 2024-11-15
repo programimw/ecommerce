@@ -3,7 +3,7 @@
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
                 <div class="dropdown profile-element">
-                    <a href="profile.php"><img alt="image" class="img-circle" src="img/profile_small.jpg"/></a>
+                    <a href="profile.php"><img alt="image" class="img-circle" src="../img/profile_small.jpg"/></a>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong
                                         class="font-bold">David Williams</strong>
@@ -25,7 +25,7 @@
                 <a href="users.php"><i class="fa fa-user-o"></i> <span class="nav-label">Users</span></a>
             </li>
             <li>
-                <a href="products.php"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Products</span></a>
+                <a href="product-list.php"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Products</span></a>
             </li>
             <li>
                 <a href="orders.php"><i class="fa fa-truck"></i> <span class="nav-label">Orders</span></a>

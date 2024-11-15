@@ -8,10 +8,10 @@
 
     <title>Admin | Profile</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -19,19 +19,19 @@
 <div id="wrapper">
 
     <!-- Sidebar menu -->
-    <?php include 'admin/components/sidebar.php'; ?>
+    <?php include 'components/sidebar.php'; ?>
 
     <div id="page-wrapper" class="gray-bg">
 
         <!-- Top bar -->
-        <?php include 'admin/components/topBar.php'; ?>
+        <?php include 'components/topBar.php'; ?>
 
         <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
                 <h2>Profile</h2>
                 <ol class="breadcrumb">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li class="active">
                         <strong>Profile</strong>
@@ -51,7 +51,7 @@
                         </div>
                         <div>
                             <div class="ibox-content no-padding border-left-right">
-                                <img alt="image" class="img-responsive" src="img/profile_big.jpg">
+                                <img alt="image" class="img-responsive" src="../img/profile_big.jpg">
                                 <input type="file">
                             </div>
                             <div class="ibox-content profile-content">
@@ -129,20 +129,20 @@
 
 
 <!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
+<script src="../js/inspinia.js"></script>
+<script src="../js/plugins/pace/pace.min.js"></script>
 
 <!-- Peity -->
-<script src="js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../js/plugins/peity/jquery.peity.min.js"></script>
 
 <!-- Peity -->
-<script src="js/demo/peity-demo.js"></script>
+<script src="../js/demo/peity-demo.js"></script>
 
 </body>
 

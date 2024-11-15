@@ -7,11 +7,11 @@
 
     <title>Ecommerce | Register</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body class="gray-bg">
@@ -20,11 +20,11 @@
     <div>
         <!-- Logo -->
         <div>
-            <img src="img/user-photo.png" alt="user photo" style="width: 100%">
+            <img src="../img/user-photo.png" alt="user photo" style="width: 100%">
         </div>
         <h3>Register to our ecommerce</h3>
         <p>Create account to see it in action.</p>
-        <form class="m-t" role="form" action="index.php">
+        <form class="m-t" role="form" action="../index.php">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Name" required="">
             </div>
@@ -39,17 +39,17 @@
             </div>
             <button type="submit" class="btn btn-primary block full-width m-b">Register</button>
             <p class="text-muted text-center"><small>Already have an account?</small></p>
-            <a class="btn btn-sm btn-white btn-block" href="index.php">Login</a>
+            <a class="btn btn-sm btn-white btn-block" href="../index.php">Login</a>
         </form>
         <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>
     </div>
 </div>
 
 <!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="js/plugins/iCheck/icheck.min.js"></script>
+<script src="../js/plugins/iCheck/icheck.min.js"></script>
 <script>
     $(document).ready(function(){
         $('.i-checks').iCheck({
