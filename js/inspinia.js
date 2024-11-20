@@ -67,6 +67,15 @@ $(document).ready(function () {
         $('#right-sidebar').toggleClass('sidebar-open');
     });
 
+    // Add class active to current link
+    $('#side-menu a').each(function () {
+        let href = '/ecommerce/admin/' + $(this).attr('href');
+        if (href === window.location.pathname) {
+            $(this).closest('li').addClass('active');
+        }
+    });
+
+
     // Initialize slimscroll for right sidebar
     $('.sidebar-container').slimScroll({
         height: '100%',
@@ -79,6 +88,7 @@ $(document).ready(function () {
         $(this).children().toggleClass('fa-comments').toggleClass('fa-remove');
         $('.small-chat-box').toggleClass('active');
     });
+
 
     // Initialize slimscroll for small chat
     $('.small-chat-box .content').slimScroll({
