@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Ushtrim Seminar</title>
+</head>
+<body>
+
+<input id ="increment" type="button" value="Increment">
+<input id ="decrement" type="button" value="Decrement" onclick="decrementValue()"><br>
+<span id="result" style="margin: 20px 50px 0px 72px">0</span>
+
+<script>
+    var result = 0;
+    document.getElementById("increment").addEventListener("click", incrementValue);
+    function incrementValue(){
+        result++;
+        document.getElementById("result").innerText = result;
+    }
+    function decrementValue(){
+        if (result > 0){
+            result--;
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

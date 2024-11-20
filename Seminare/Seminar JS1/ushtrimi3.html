@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Ushtrimi 1</title>
+
+    <style>
+        .td-style {
+            border: 1px solid black
+        }
+    </style>
+</head>
+
+<script>
+
+    var results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var dice1;
+    var dice2;
+
+    for (var i = 0; i <= 36000; i++) {
+        dice1 = hidhZarin();
+        dice2 = hidhZarin();
+        var index = dice1+dice2 -2;
+        results[index]++;
+    }
+
+    function hidhZarin() {
+        return Math.floor(1 + (Math.random() * 6));
+    }
+
+    displayResult();
+    function displayResult(){
+        var conent = "<h1>Rezultatet pas hedhjeve</h1>\n" +
+            "<table class='td-style'>\n" +
+            "    <thead>\n" +
+            "        <tr>\n" +
+            "            <th class='td-style'>Rezultati i hedhjes</th>\n" +
+            "            <th class='td-style'>Numri I hedhjeve</th>\n" +
+            "        </tr>\n" +
+            "    </thead>\n" +
+            "    <tbody>\n";
+
+        var k = 2;
+        for (var i = 0; i < 11; i++){
+            conent += "<tr>" +
+                "<td class='td-style'>"+ k++ +"</td>"+
+                "<td class='td-style'>"+results[i]+"</td>"+
+                "</tr>";
+        }
+
+        conent += "</tbody>";
+        conent += "</table>";
+
+        document.write(conent);
+        return;
+    }
+
+</script>
+<body>
+<!--    <p id = "showData"></p>-->
+
+</body>
+</html>

@@ -40,6 +40,35 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+
+<script>
+    // function isEmpty(val) {
+    //     return (val == "" || val === undefined || val == null || val === false || val.length <= 0) ? true : false;
+    // }
+
+    // AJAX CALL
+    // $.ajax({
+    //     type: "POST",
+    //     url: "login_api.php",
+    //     // dataType: 'json',
+    //     async: false,
+    //     cache: false,
+    //     processData: false,
+    //     data: data,
+    //     contentType: false,
+    //     success: function (response, status, call) {
+    //         response = JSON.parse(response);
+    //
+    //         if (call.status == 200) {
+    //             window.location.href = "profile.php";
+    //         } else {
+    //             $("#" + response.tag).text(response.message);
+    //             Swal.fire('Error', response.message, 'error')
+    //         }
+    //     }
+
+</script>
+
 </body>
 
 </html>

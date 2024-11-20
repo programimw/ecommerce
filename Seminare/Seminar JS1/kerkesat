@@ -1,0 +1,53 @@
+1.	Ndërtoni një faqe për realizimin e një makine llogaritëse të thjeshtë. Faqja duhet të ketë dy fusha input ku përdoruesi të shkruaj numrat mbi të cilat do të realizoj veprimin, një dropdown liste ku përdoruesi duhet të zgjedhë një nga veprimet (+, -, *, /) dhe një fushë input të paeditueshme ku do të shfaqet rezultati i veprimit dhe një buton llogarit. Ndërtoni skriptin në JavaScript që në momentin që klikohet mbi butonin llogarit të lexohen numrat dhe veprimi i dhënë nga përdoruesi dhe të kryhet veprimi dhe shfaqet rezultati.
+
+2.	(10.10) Një kompani i paguan shitësit e tij mbi bazën e një page javore dhe një shtese. Një shitës paguhet 200$ dollarë në jave plus 9% të shitjeve bruto për atë jave. Psh: një shitës i cili ka bërë $5000 për një javë përfiton $200 plus 9 % te $5000, ose një total prej $650. Shkruani një skript duke përdorur një vektor si numërues që merr shumën e shitjeve të çdo shitësi nëpërmjet një forme HTML5 dhe përcakton sa persona kanë fituar shtesë page në vargun e mëposhtëm:
+a) $200–299
+b) $300–399
+c) $400–499
+d) $500–599
+e) $600–699
+f) $700–799
+g) $800–899
+h) $900–999
+i)mbi $1000
+
+3.	(10.11) Shkruani kodin i cili realizon veprimet e mëposhtme në një tabele një-dimensional e (vektor):
+a) Vendos 10 elementet e vektorit në zero.
+b) Shton 1 në secilin prej 15 elementeve të një vektori bonus.
+c) Shfaq pesë vlerat e vektorit A të ndara me hapësire.
+
+4.	(10.12) Përdorni një vektor për te zgjidhur problemin: Lexoni 10 numra brenda vlerave 10 deri 100. Pasi të lexohet çdo numër, printojeni atë vetëm nëse ai nuk është dublikat i ndonjë numri të printuar më parë.
+
+5.	(10.14) Shkruani një skript që simulon hedhjen e dy zareve. Skripti të përdori Math.random për të hedhur zarin e parë dhe të dytë. Llogaritni shumën e dy vlerave të rena në zarin e parë dhe të dytë. Në figurën 10.22 tregohen 36 kombinimet e mundshme të dy zareve. Programi juaj duhet ti hedhe zaret 36.000 herë. Përdorni një vektor për të ruajtur numrin e herëve që bie çdo shumë e mundshme. Paraqitini të dhënat në një tabele HTML5.
+
+6.	(10.16) Shkruani një skript që përdor një vektor me 1000 elementë për të përcaktuar dhe printuar numrat qe janë prim nga 1 në 999. Për të realizuar ketë skript mund të përdorni algoritmin Sieve of Eratosthenes i cili gjen numrat prim. Ky algoritëm vepron si më poshtë:
+a.	Krijon një vektor me të gjithë elementët e inicializuar 1 (true). Të gjithë elementët me indeks prim do të qëndrojnë në vlerën 1 të tjetër do të vendosen në 0.
+b.	Vendos dy elementet e parë në 0 duke qenë se 0 dhe 1 nuk janë prim. Duke filluar nga elementi me indeks 2 sa herë që gjendet një element me vlerë 1 futemi në një cikël deri në elementin e fundit të vektorit dhe vendoseni në 0 vlerën e çdo elementi indeksi i të cilit është shumëfish i indeksit me vlere 1 dhe kështu me radhë.
+Pasi të ketë përfunduar procesi vektori do të përmbaj vlera 0 dhe 1. Vlerat 1 do të përcaktojnë se indeksi i këtij elementi është një vlere prim.
+7.	(11.2) Krijoni një faqe që përmban 4 butona. Çdo buton kur klikohet duhet të hapi një alert dialog që paraqet një datë ose orën që lidhet me një mënyre të caktuar me kohën e tanishme. Krijoni një buton Tani që shfaq orën dhe datën aktuale, një buton Dje qe shfaq datën dhe orën e 24 orëve më pare dhe dy butona të tjerë që shfaqin datën dhe orën e 10 viteve më parë dhe e 1 jave më parë.
+
+8.	(11.6) Shkruani një skript që përdor operatoret relacionale dhe barazisë për të krahasuar dy stringa që lexohen nga një formë HTML5. Shfaqni nëse stringa e parë është më e madhe më e vogël ose e barabartë me stringën e dytë.
+
+9.	  (11.7) Shkruani një skript që përdor numra që gjenerohen në mënyrë të rastësishme për të krijuar një fjali. Përdorni 4 vektorë për stringat nyje, emër, folje, parafjale. Krijoni një fjali duke zgjedhur në mënyre të rastësishme fjalë nga vektorët në këtë radhë: nyje, emër, folje, parafjale, nyje dhe emër. Pasi të keni zgjedhur një fjalë bashkëngjiteni atë në fjali duke e ndarë me hapësirë. Pasi fjali të jetë gjeneruar duhet të shfaqet duke filluar me shkronjë të madhe dhe të përfundoj me “.”.
+article array: "the", "a","one", "some" and "any";
+noun array "boy", "girl", "dog", "town" and"car";
+verb array "drove", "jumped", "ran", "walked" and "skipped";
+preposition array "to", "from", "over", "under" and "on".
+Programi juaj duhet të gjeneroj 20 fjali për të formuar një histori dhe ta shfaqi në një textarea në HTML5. Historia duhet të filloj me "Once upon a time..." dhe përfundoj me "THE END".
+
+10.	(11.10) Shkruani një skript i cili lexo një numër telefoni në formatin (555) 555-5555 dhe duke përdorur metodat e stringave të ndaj numrin ekzaktësisht në kodin e vendit si një tokën, tre numrat në vazhdim si një token dhe 4 numrat e ngelura si një tokën tjetër. Shfaqni kodin e vendit në një fushë tekst dhe 7 numrat e tjerë ne një fushe tekst tjetër.
+
+11.	(11.11 - 14) Shkruani një skript i cili lexon një tekst nga një forme HTML5.
+a.	Kthejeni tekstin në tokënsa me anë të metodës split, shfaqni tokënsat në të kundërt;
+b.	Shfaqni tekstin në shkronja të mëdha;
+c.	Shfaqni tekstin në shkronja të vogla;
+d.	Gjeni numrin e herëve që përsëritet një karakter i caktuar në tekst duke përdorur metodën indexOf.
+e.	Gjeni numrin e herëve që përsëritet çdo shkronjë e alfabetit në tekst. Ruajini vlerat totale për çdo shkronjë në një vektor dhe printojini vlerat në mënyrë tabelare në HTML5 pasi të jetë përcaktuar totali i përsëritjeve.
+
+12.	(11.15) Shkruani një skript i cili lexon një seri stringash dhe shfaq në një HTML5 textarea :
+a.	stringat që fillojnë me karakterin “b”.
+b.	Stringat që mbarojnë me “ed”
+
+13.	(11.21) Shkruani një program që lexon një fjale me 5 shkronja nga përdoruesi dhe shfaqe të gjithë fjalët me nga tre shkronja që mund të derivojnë nga shkronjat e fjalës me 5 shkronja. Per shembul nga fjala “bathe” mund te krijohen fjalet “ate,” “bat,” “bet,” “tab,” “hat,” “the” dhe “tea.” Shfaqni rezultati në një textarea ne HTML5.
+
+14.	(11.22) Shkruani një skript i cili lexon një datë në një formë HTML5 dhe krijon një objekt Date në të cilin e ruan atë. Përdorni metodat e ndryshme të objektit Date për të konvertuar datën në stringa për tu shfaqur në formate të ndryshme.

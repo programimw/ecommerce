@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Ushtrimi 1</title>
+
+    <style>
+        .td-style{
+            border: 1px solid black;
+            text-align: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    var sasia = [0,0,0,0,0];
+    var sasiaTotal = 0;
+    var cmimi = [0,0,0,0,0];
+    var cmim_njesi = [2.98,4.5, 9.98, 4.49, 6.87];
+
+    var cmimiTotal = 0;
+
+    for(;;){
+
+        var productCode = parseInt(window.prompt("Vendosni kodin e produktit [1-5] ose 0 per te ndaluar"));
+        // nese kodi 0 shfaqim rezultatin
+        if (productCode == 0){
+            showData();
+            break;
+        } else if (productCode < 0 || productCode >5){
+            window.alert("Kodi i gabuar: Kodi duhet te jete [0-5]");
+            continue;
+        }
+        // Sasia
+        var sasiaProdukt = parseInt(window.prompt("Vendosni sasine e produktit "+ productCode));
+        sasia[productCode-1] += sasiaProdukt;
+        sasiaTotal += sasiaProdukt;
+
+        // Cmimi
+        cmimi[productCode-1] += sasiaProdukt * cmim_njesi[productCode-1];
+        cmimiTotal += sasiaProdukt * cmim_njesi[productCode-1];
+    }
+    function showData(){
+        var content =
+                    "<table>\n" +
+                    "    <thead>\n" +
+                    "        <tr>\n" +
+                    "            <th class='td-style'>Produkti</th>\n" +
+                    "            <th class='td-style'>Sasia</th>\n" +
+                    "            <th class='td-style'>Cmimi</th>\n" +
+                    "        </tr>\n" +
+                    "    </thead>\n" +
+                        "<tbody>";
+
+        for (var i = 0; i<5; i++){
+            content +="<tr>" +
+                         "<td class='td-style'>"+(i+1)+"</td>"+
+                         "<td class='td-style'>"+sasia[i]+"</td>"+
+                         "<td class='td-style'>"+cmimi[i]+"</td>"+
+                       "</tr>";
+        }
+
+        content += "</tbody>" +
+                    "<tfoot>" +
+                        "<tr>" +
+                            "<td class='td-style'>Totali</td>"+
+                            "<td class='td-style'>"+sasiaTotal+"</td>"+
+                            "<td class='td-style'>"+cmimiTotal+"</td>"+
+                         "</tr>"+
+                     "</tfoot>";
+        content += "</table>";
+        document.writeln(content);
+    }
+</script>
+
+</body>
+
+
+
+</html>

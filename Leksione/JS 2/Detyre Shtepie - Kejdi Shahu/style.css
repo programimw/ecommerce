@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  padding: 1em;
+  gap: 2em;
+}
+
+.card {
+  width: 25em;
+  background-color: rgb(182, 207, 233);
+}
+
+.card > * {
+  display: block;
+  margin: 1em;
+  flex-direction: column;
+}
+
+.card * {
+  font-size: 1.2em;
+}
+
+.first-group > *,
+.second-group > * {
+  display: block;
+}
+
+.second-group > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  width: 2.5em;
+  text-align: center;
+  background-color: rgb(167, 190, 201);
+  margin-right: 0.5em;
+}
+
+input {
+  width: 100%;
+}
+
+.convert {
+  font-weight: 500;
+  font-size: 5em;
+  color: #444444;
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  color: rgb(61, 79, 153);
+  font-weight: 700;
+}
