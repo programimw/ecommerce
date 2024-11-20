@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Ushtrim Seminar</title>
+</head>
+<body>
+<table id="result"></table>
+
+
+<script>
+    var rows = parseInt(window.prompt("Vendosni numrin e rreshtave"));
+    var coulumns = parseInt(window.prompt("Vendosni numrin e shtyllave"));
+    var table = document.getElementById("result");
+
+    for (var i = 0; i < rows; i++) {
+        var currentRow = table.insertRow(i);
+
+        for (var j = 0; j<coulumns; j++){
+            var cell = currentRow.insertCell(j);
+            cell.style = "border:1px solid black";
+            cell.innerText = "("+i+":"+j+")";
+        }
+    }
+</script>
+</body>
+</html>
