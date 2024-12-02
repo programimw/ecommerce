@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<body>
+<div style="margin: 20px 0px 0px 70px;">
+    <input type="button" value="Increment" id="increment">
+    <input type="button" value="Decrement" id="decrement" onclick="decrement()">
+    <div style="margin: 20px 0px 0px 70px" id="result">0</div>
+
+</div>
+
+<script>
+    var count = 0;
+
+    document.getElementById("increment").addEventListener("click",increment,false);
+    function increment(){
+        document.getElementById("result").innerHTML = ++count;
+    }
+    function decrement(){
+        if (count > 0){
+            document.getElementById("result").innerHTML = --count;
+        }
+    }
+
+
+</script>
+</body>
+</html>

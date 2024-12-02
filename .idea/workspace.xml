@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="922d1abd-acf7-4fff-b318-d2c871fcb2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS2/ushtrimi1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS2/ushtrimi2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS2/ushtrimi3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS 2.1/ushtrimi1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS 2.1/ushtrimi2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminare/Seminar JS 2.1/ushtrimi3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +73,7 @@
       <workItem from="1730707126669" duration="12365000" />
       <workItem from="1731313771513" duration="2452000" />
       <workItem from="1731485749075" duration="7937000" />
+      <workItem from="1733081587882" duration="7772000" />
     </task>
     <servers />
   </component>

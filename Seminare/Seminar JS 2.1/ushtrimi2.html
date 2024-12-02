@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+<body>
+
+<table id ="result">
+
+</table>
+<script>
+    var rows = parseInt(window.prompt("Vendos numrin e rreshtave"));
+    var cols = parseInt(window.prompt("Vendos numrin e shtyllave"));
+
+    var table = document.getElementById("result");
+
+    for (var i = 0; i< rows; i++){
+        var currentRow = table.insertRow(i);
+        for (var j=0; j<cols; j++){
+            var currentCell = currentRow.insertCell(j);
+            currentCell.style = "border:2px solid black; font-weight:bolder";
+            currentCell.innerText = "("+i+":"+j+")";
+        }
+    }
+
+</script>
+</body>
+</html>
