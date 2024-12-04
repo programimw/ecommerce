@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce | Login</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body class="gray-bg">
+<?php
+require_once "includes/header.php";
+?>
 
 <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
@@ -22,12 +11,14 @@
         <p>Login in. To see it in action.</p>
         <form class="m-t" role="form" action="#">
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Username" required="">
+                <input type="text" name = "email_nr"  id = "email_nr" class="form-control" placeholder="E-Mail ose numri" required="">
+                <span class="error-message" id="emailNrError"></span>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" required="">
+                <input type="password" name = "password"  id = "password" class="form-control" placeholder="Password" required="">
+                <span class="error-message" id="passwordError"></span>
             </div>
-            <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+            <button type="button" class="btn btn-primary block full-width m-b" onclick="login();">Login</button>
 
             <a href="#"><small>Forgot password?</small></a>
             <p class="text-muted text-center"><small>Do not have an account?</small></p>
@@ -36,39 +27,74 @@
     </div>
 </div>
 
-<!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<?php
+    require_once "includes/footer.php";
+?>
+
 
 
 <script>
-    // function isEmpty(val) {
-    //     return (val == "" || val === undefined || val == null || val === false || val.length <= 0) ? true : false;
-    // }
+    function login() {
+        // var name = document.getElementById("name").value;
+        var email_number = $("#email_nr").val();
+        var password = $("#password").val();
 
-    // AJAX CALL
-    // $.ajax({
-    //     type: "POST",
-    //     url: "login_api.php",
-    //     // dataType: 'json',
-    //     async: false,
-    //     cache: false,
-    //     processData: false,
-    //     data: data,
-    //     contentType: false,
-    //     success: function (response, status, call) {
-    //         response = JSON.parse(response);
-    //
-    //         if (call.status == 200) {
-    //             window.location.href = "profile.php";
-    //         } else {
-    //             $("#" + response.tag).text(response.message);
-    //             Swal.fire('Error', response.message, 'error')
-    //         }
-    //     }
+        var nameRegex = /^[a-zA-Z ]{3,20}$/;
+        var passwordRegex = /^[a-zA-Z0-9-_ ]{4,}$/;
 
+        var error = 0;
+
+        // validimi i emailit
+        if (isEmpty(email_number)) {
+            $("#email_nr").addClass('error');
+            $("#emailNrError").text("Email nuk mund te jete bosh");
+            error++;
+        } else {
+            $("#email_nr").removeClass('error');
+            $("#emailNrError").text("")
+        }
+
+        // validimi i passowrdit
+        if (!passwordRegex.test(password)) {
+            $("#password").addClass('error');
+            $("#passwordError").text("Password ka minimumi 4 karaktere");
+            error++;
+        } else {
+            $("#password").removeClass('error');
+            $("#passwordError").text("");
+        }
+
+        // Data that will be sent in backend
+        var data = new FormData();
+        data.append("action", "login");
+        data.append("email_number", email_number);
+        data.append("password", password);
+
+        // Thirrje ne backend dhe dergimi i te dhenave.
+        if (error == 0) {
+            $.ajax({
+                type: "POST",
+                url: "ajax.php",
+                // dataType: 'json',
+                async: false,
+                cache: false,
+                processData: false,
+                data: data,
+                contentType: false,
+                success: function (response, status, call) {
+                    response = JSON.parse(response);
+                    console.log(response);
+
+                    if (call.status == 200) {
+                        window.location.href = response.location;
+                    } else {
+                        $("#" + response.tagError).text(response.message);
+                        $("#" + response.tagElement).addClass('error');
+                        // Swal.fire('Error', response.message, 'error')
+                    }
+                },
+            })
+        }
+    }
 </script>
 
-</body>
-
-</html>

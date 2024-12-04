@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['id']) && empty($_SESSION['id'])){
+    header("Location:http://localhost/ecommerce/");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 

@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ecommerce | Register</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        .error-message {
-            float: left;
-            color: #d71b1b
-        }
-
-    </style>
-</head>
-
-<body class="gray-bg">
+<?php
+require_once "includes/header.php";
+?>
 
 <div class="middle-box text-center loginscreen  animated fadeInDown">
     <div>
@@ -65,26 +43,9 @@
     </div>
 </div>
 
-<!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!-- iCheck -->
-<script src="js/plugins/iCheck/icheck.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-green',
-            radioClass: 'iradio_square-green',
-        });
-    });
-</script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-</body>
-
-</html>
-
+<?php
+    require_once "includes/footer.php";
+?>
 
 <script>
     toastr.options = {
@@ -105,13 +66,6 @@
         "hideMethod": "fadeOut"
     }
 
-    // Display an info toast with no title
-
-
-    function isEmpty(val) {
-        return (val == "" || val === undefined || val == null || val === false || val.length <= 0) ? true : false;
-    }
-
     function register_user() {
         // var name = document.getElementById("name").value;
         var name = $("#name").val();
@@ -124,42 +78,42 @@
 
         var error = 0;
         // validimi i emrit
-        // if (!nameRegex.test(name)) {
-        //     $("#name").addClass('error');
-        //     $("#nameError").text("Emri vetem karaktere, minimumi 3");
-        //     error++;
-        // } else {
-        //     $("#name").removeClass('error');
-        //     $("#nameError").text("")
-        // }
-        //
-        // // validimi i emailit
-        // if (isEmpty(email)) {
-        //     $("#email").addClass('error');
-        //     $("#emailError").text("Email nuk mund te jete bosh");
-        //     error++;
-        // } else {
-        //     $("#email").removeClass('error');
-        //     $("#emailError").text("")
-        // }
-        //
-        // // validimi i passowrdit
-        // if (!passwordRegex.test(password)) {
-        //     $("#password").addClass('error');
-        //     $("#passwordError").text("Password ka minimumi 4 karaktere");
-        //     error++;
-        // } else if (password != confirmPassword) {
-        //     $("#password").addClass('error');
-        //     $("#confirm-password").addClass('error');
-        //     $("#passwordError").text("Passwordet nuk jane te barabarta");
-        //     $("#confirmPasswordError").text("Passwordet nuk jane te barabarta");
-        //     error++;
-        // } else {
-        //     $("#password").removeClass('error');
-        //     $("#confirm-password").removeClass('error');
-        //     $("#passwordError").text("");
-        //     $("#confirmPasswordError").text("");
-        // }
+        if (!nameRegex.test(name)) {
+            $("#name").addClass('error');
+            $("#nameError").text("Emri vetem karaktere, minimumi 3");
+            error++;
+        } else {
+            $("#name").removeClass('error');
+            $("#nameError").text("")
+        }
+
+        // validimi i emailit
+        if (isEmpty(email)) {
+            $("#email").addClass('error');
+            $("#emailError").text("Email nuk mund te jete bosh");
+            error++;
+        } else {
+            $("#email").removeClass('error');
+            $("#emailError").text("")
+        }
+
+        // validimi i passowrdit
+        if (!passwordRegex.test(password)) {
+            $("#password").addClass('error');
+            $("#passwordError").text("Password ka minimumi 4 karaktere");
+            error++;
+        } else if (password != confirmPassword) {
+            $("#password").addClass('error');
+            $("#confirm-password").addClass('error');
+            $("#passwordError").text("Passwordet nuk jane te barabarta");
+            $("#confirmPasswordError").text("Passwordet nuk jane te barabarta");
+            error++;
+        } else {
+            $("#password").removeClass('error');
+            $("#confirm-password").removeClass('error');
+            $("#passwordError").text("");
+            $("#confirmPasswordError").text("");
+        }
 
         // Data that will be sent in backend
         var data = new FormData();
@@ -187,7 +141,7 @@
                     if (call.status == 200) {
                         toastr.success(response.message)
                         setTimeout(function (){
-                            window.location.href = "login.php";
+                            window.location.href = response.location;
                         }, 2500);
 
                     } else {
@@ -198,6 +152,5 @@
                 },
             })
         }
-
     }
 </script>
