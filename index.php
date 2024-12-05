@@ -39,7 +39,6 @@ require_once "includes/header.php";
         var email_number = $("#email_nr").val();
         var password = $("#password").val();
 
-        var nameRegex = /^[a-zA-Z ]{3,20}$/;
         var passwordRegex = /^[a-zA-Z0-9-_ ]{4,}$/;
 
         var error = 0;
@@ -54,7 +53,7 @@ require_once "includes/header.php";
             $("#emailNrError").text("")
         }
 
-        // validimi i passowrdit
+        // validimi i pass
         if (!passwordRegex.test(password)) {
             $("#password").addClass('error');
             $("#passwordError").text("Password ka minimumi 4 karaktere");
@@ -83,7 +82,6 @@ require_once "includes/header.php";
                 contentType: false,
                 success: function (response, status, call) {
                     response = JSON.parse(response);
-                    console.log(response);
 
                     if (call.status == 200) {
                         window.location.href = response.location;

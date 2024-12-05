@@ -67,7 +67,8 @@ if ($_POST["action"] == "register")
                     FROM users
                     WHERE email = '".$email."'  ";
 
-
+    echo $query_check;
+    exit;
     $result_check = mysqli_query($conn, $query_check);
 
     if (!$result_check){
@@ -92,9 +93,11 @@ if ($_POST["action"] == "register")
     }
 
 
+
     // Ruatja e te dhenave
     $query_insert = "INSERT INTO users set
                      name = '".$name."', 
+                     role_id = '1', 
                      email = '".$email."', 
                      password = '".$passwordHashed."', 
                      created_at = '".date("Y-m-d H:i:s")."'
@@ -122,25 +125,11 @@ if ($_POST["action"] == "register")
 
     mysqli_close($conn);
 
-} elseif ($_POST['action'] == "login"){
+}
+elseif ($_POST['action'] == "login"){
 
     $email = mysqli_real_escape_string($conn,trim($_POST['email_number']));
     $password = mysqli_real_escape_string($conn,trim($_POST['password']));
-
-    //Validimet
-    // Validimi nese eshte email
-    // add validation as a phone number and email
-//
-//    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-//        http_response_code(203);
-//        echo json_encode(
-//            array(
-//                "message" => "Email ose nr i pasakte",
-//                "tagError" => "emailError",
-//                "tagElement" => "email"
-//            ));
-//        exit;
-//    }
 
     // Validimi i password
     if (empty($password) || strlen($password) < 4) {
@@ -156,8 +145,9 @@ if ($_POST["action"] == "register")
 
 
     // Kontrollojme nese useri ekziston ne db me email dhe pass
-    $query_check = "SELECT id,email, password
-                    FROM users
+    $query_check = "SELECT users.id, users.name, email, password, role_id, roles.name as role_name
+                    FROM users 
+                    left join roles on users.role_id = roles.id
                     WHERE email = '".$email."'; ";
 
     $result_check = mysqli_query($conn, $query_check);
@@ -183,6 +173,7 @@ if ($_POST["action"] == "register")
     }
 
     $row = mysqli_fetch_assoc($result_check);
+
     $passwordHashed = $row['password'];
 
     // verifikimi i password
@@ -190,7 +181,7 @@ if ($_POST["action"] == "register")
         http_response_code(203);
         echo json_encode(
             array(
-                "message" => "Passwordi/Email te pasakte "
+                "message" => "Passwordi/Email te pasakte."
             ));
         exit;
     }
@@ -199,14 +190,23 @@ if ($_POST["action"] == "register")
 
     $_SESSION['id'] = $row['id'];
     $_SESSION['email'] = $row['email'];
+    $_SESSION['date_time'] = time();
+    $_SESSION['name'] = $row['name'];
 
     mysqli_close($conn);
+
+    // Nese eshte admin location eshte lista e userave
+    // nese eshte user location eshte profili
+    $location = "profile.php";
+    if ($row['role_id'] != 1){
+        $location = "users.php";
+    }
 
     http_response_code(200);
     echo json_encode(
         array(
             "message" => "Useri logged in",
-            "location" => "profile.php"
+            "location" => $location
         ));
     exit;
 }

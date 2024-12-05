@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="922d1abd-acf7-4fff-b318-d2c871fcb2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/auth/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/auth/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/auth/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
@@ -81,7 +81,7 @@
       <workItem from="1730707126669" duration="12365000" />
       <workItem from="1731313771513" duration="2452000" />
       <workItem from="1731485749075" duration="7937000" />
-      <workItem from="1733081587882" duration="12782000" />
+      <workItem from="1733081587882" duration="16862000" />
     </task>
     <servers />
   </component>

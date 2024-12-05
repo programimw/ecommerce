@@ -30,8 +30,14 @@ require_once "includes/header.php";
                 <span class="error-message" id="confirmPasswordError"></span>
             </div>
             <div class="form-group">
-                <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy
-                    </label></div>
+                <div class="checkbox i-checks">
+                    <label style="padding-left: 0px
+">
+                        <input type="checkbox">
+                        <i></i>
+                        Pranoj termat dhe kushtet e perdorimit
+                    </label>
+                </div>
             </div>
             <button type="button" id='register' class="btn btn-primary block full-width m-b" onclick="register_user();">
                 Register
@@ -128,12 +134,12 @@ require_once "includes/header.php";
             $.ajax({
                 type: "POST",
                 url: "ajax.php",
-                // dataType: 'json',
                 async: false,
                 cache: false,
                 processData: false,
                 data: data,
                 contentType: false,
+                // dataType: 'json',
                 success: function (response, status, call) {
                     response = JSON.parse(response);
                     console.log(response);
@@ -149,7 +155,7 @@ require_once "includes/header.php";
                         $("#" + response.tagElement).addClass('error');
                         // Swal.fire('Error', response.message, 'error')
                     }
-                },
+                }
             })
         }
     }
