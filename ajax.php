@@ -1,6 +1,6 @@
 <?php
-
 require_once "connect.php";
+require_once "functions.php";
 
 // Register User Data
 if ($_POST["action"] == "register")
@@ -209,6 +209,127 @@ elseif ($_POST['action'] == "login"){
             "location" => $location
         ));
     exit;
+}
+elseif($_POST['action'] == "updateUser"){
+    session_start();
+    $id = mysqli_real_escape_string($conn, $_POST['id']);
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $surname = mysqli_real_escape_string($conn, $_POST['surname']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $textRegex = "/^[a-zA-Z ]{3,20}$/";
+
+    // nese veprimi nuk po realizohet nga useri qe eshte loguar.
+    if ($_SESSION['id'] != $id){
+        http_response_code(203);
+        echo json_encode(
+            array(
+                "message" => "Nuk jeni i autorizuar per te realizuar kete thirrje",
+            ));
+        exit;
+    }
+
+    //Validimet
+    // Validimi i emrit
+    if (!preg_match($textRegex, $name)){
+        http_response_code(203);
+        echo json_encode(
+            array(
+                "message" => "Emri vetem karaktere, minimumi 3",
+                "tagError" => "nameError",
+                "tagElement" => "name"
+            ));
+        exit;
+    }
+
+    // Validimi i mbiemrit
+    if (!preg_match($textRegex, $surname)){
+        http_response_code(203);
+        echo json_encode(
+            array(
+                "message" => "Mbiemri vetem karaktere, minimumi 3",
+                "tagError" => "surnameError",
+                "tagElement" => "surname"
+            ));
+        exit;
+    }
+
+    // Validimi nese eshte email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        http_response_code(203);
+        echo json_encode(
+            array(
+                "message" => "Email nuk eshte i sakte",
+                "tagError" => "emailError",
+                "tagElement" => "email"
+            ));
+        exit;
+    }
+
+    // Validojme nese ekziston useri
+    $query_check = "SELECT 
+                           id 
+                    FROM users
+                    WHERE email = '".$email."'  ";
+
+
+    $result_check = mysqli_query($conn, $query_check);
+
+    if (!$result_check){
+        http_response_code(500);
+        echo json_encode(
+            array(
+                "message" => "Internal Server Error",
+                "error" => mysqli_error($conn)
+            ));
+        exit;
+    }
+
+    if (mysqli_num_rows($result_check) == 0){
+        http_response_code(203);
+        echo json_encode(
+            array(
+                "message" => "Nuk ekziston useri me kete email",
+                "tagError" => "emailError",
+                "tagElement" => "email"
+            ));
+        exit;
+    }
+
+
+
+    // Ruatja e te dhenave
+    $query_update= "UPDATE users set
+                     name = '".$name."', 
+                     surname = '".$surname."', 
+                     email = '".$email."', 
+                     updated_at = '".date("Y-m-d H:i:s")."'
+                     WHERE id = '".$id."'";
+
+    $resut_update = mysqli_query($conn, $query_update);
+
+    if (!$resut_update){
+        http_response_code(500);
+        echo json_encode(
+            array(
+                "message" => "Internal Server Error",
+                "error" => mysqli_error($conn)
+            ));
+        exit;
+    } else {
+        http_response_code(200);
+        echo json_encode(
+            array(
+                "message" => "Useri u perditesua me sukses",
+                "location" => "/"
+            ));
+        exit;
+    }
+
+    mysqli_close($conn);
+
+
+
+
 }
 
 

@@ -13,6 +13,9 @@
 
 <!-- Peity -->
 <script src="js/demo/peity-demo.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script src="js/scripts.js"></script>
 
 </body>
 
