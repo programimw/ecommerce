@@ -92,13 +92,15 @@ if ($_POST["action"] == "register")
         exit;
     }
 
-
+    // gjenerimi i kodit te verifikimit te emailit
+    // $email_verification_code = rand(10000, 99999);
 
     // Ruatja e te dhenave
     $query_insert = "INSERT INTO users set
                      name = '".$name."', 
                      role_id = '1', 
                      email = '".$email."', 
+                     email_verification_code = '".$email_verification_code."', 
                      password = '".$passwordHashed."', 
                      created_at = '".date("Y-m-d H:i:s")."'
                        ";
@@ -114,6 +116,10 @@ if ($_POST["action"] == "register")
             ));
         exit;
     } else {
+        //TODO SEND CODE TO EMAIL FOR A VERIFICATION
+//        $text = "Kodi i verifikimit te emailit tuaj eshte : ".$email_verification_code;
+//        sendEmail($text);
+
         http_response_code(200);
         echo json_encode(
             array(

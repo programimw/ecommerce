@@ -49,6 +49,28 @@ require_once "includes/header.php";
     </div>
 </div>
 
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <i class="fa fa-envelope modal-icon"></i>
+                <h4 class="modal-title">Verfikimi i E-Mailit</h4>
+            </div>
+            <div class="modal-body">
+                <p><strong>Ne emailin tuaj kemi derguar nje kod.</strong> Vendosni kodin per te verikuar emailin.</p>
+                <div class="form-group"><label>Kodi Juaj</label>
+                    <input type="number" placeholder="Vendosni kodin" class="form-control"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="verify_email();">Verifiko</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
     require_once "includes/footer.php";
 ?>
@@ -145,6 +167,9 @@ require_once "includes/header.php";
                     console.log(response);
 
                     if (call.status == 200) {
+                        // TODO SET TE CODE SENT IN EMAIL. iF THE CODE IS OK, GO TO THE NEXT STEP
+                        // $('#myModal').modal('toggle');
+
                         toastr.success(response.message)
                         setTimeout(function (){
                             window.location.href = response.location;
