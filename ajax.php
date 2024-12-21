@@ -67,8 +67,6 @@ if ($_POST["action"] == "register")
                     FROM users
                     WHERE email = '".$email."'  ";
 
-    echo $query_check;
-    exit;
     $result_check = mysqli_query($conn, $query_check);
 
     if (!$result_check){
@@ -198,6 +196,7 @@ elseif ($_POST['action'] == "login"){
     $_SESSION['email'] = $row['email'];
     $_SESSION['date_time'] = time();
     $_SESSION['name'] = $row['name'];
+    $_SESSION['role_name'] = $row['role_name'];
 
     mysqli_close($conn);
 

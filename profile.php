@@ -4,6 +4,8 @@ session_start();
 require_once "connect.php";
 require_once "functions.php";
 
+require_once "includes/auth/header.php";
+require_once "includes/auth/menu.php";
 
 $query_user_data = "SELECT id,
                            name,
@@ -27,9 +29,6 @@ while ($row = mysqli_fetch_assoc($result_user_data)){
     $data['surname'] = $row['surname'];
     $data['email'] = $row['email'];
 }
-
-require_once "includes/auth/header.php";
-require_once "includes/auth/menu.php";
 ?>
     <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">

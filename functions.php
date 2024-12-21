@@ -8,14 +8,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
-
+// printo nje vektor
 function printData($data){
     echo "<pre>";
     print_r($data);
     echo "</pre>";
 }
 
-
+// dergo email
 function sendEmail($text){
 
 //Create an instance; passing `true` enables exceptions
