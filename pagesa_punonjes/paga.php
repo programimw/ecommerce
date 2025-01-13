@@ -103,6 +103,7 @@ while ($row = mysqli_fetch_assoc($result_users)){
     $data_users[$row['id']]['date'][$row['date']]['total_paga'] += round ($hourly_payment * $hours_in * $k_in  + $hourly_payment * $hours_out * $k_out,2);
 
 }
+
 ?>
 
 
@@ -131,7 +132,7 @@ while ($row = mysqli_fetch_assoc($result_users)){
     <tbody>
     <?php foreach ($data_users as $id => $data) { ?>
     <tr>
-        <td class="border-tabe"><span class = "pointer-span" id = "span_<?=$id?>" onclick="toogle('<?=$id?>')">+</span></td>
+        <td class="border-tabe" onclick="toogle('<?=$id?>')"><span class = "pointer-span" id = "span_<?=$id?>" onclick="toogle('<?=$id?>')">+</span></td>
         <td class="border-tabe"><?=$data['full_name']?></td>
         <td class="border-tabe"><?=$data['hours_in']?></td>
         <td class="border-tabe"><?=$data['hours_out']?></td>

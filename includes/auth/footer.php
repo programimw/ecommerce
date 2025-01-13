@@ -17,13 +17,18 @@
 <script src="js/demo/peity-demo.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-<script src="js/scripts.js"></script>
 
 <!-- Sweet alert -->
 <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+<!-- Ladda -->
+<script src="js/plugins/ladda/spin.min.js"></script>
+<script src="js/plugins/ladda/ladda.min.js"></script>
+<script src="js/plugins/ladda/ladda.jquery.min.js"></script>
+
+
+
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
-
-
-

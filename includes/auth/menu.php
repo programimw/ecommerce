@@ -24,6 +24,9 @@
             <li>
                 <a href="profile.php"><i class="fa fa-users"></i> <span class="nav-label">Profile</span></a>
             </li>
+            <li>
+                <a href="products.php"><i class="fa fa-shopping-cart"></i> <span class="nav-label">Products</span></a>
+            </li>
         </ul>
 
     </div>

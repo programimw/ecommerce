@@ -91,7 +91,7 @@ if ($_POST["action"] == "register")
     }
 
     // gjenerimi i kodit te verifikimit te emailit
-    // $email_verification_code = rand(10000, 99999);
+    $email_verification_code = rand(10000, 99999);
 
     // Ruatja e te dhenave
     $query_insert = "INSERT INTO users set
@@ -122,7 +122,7 @@ if ($_POST["action"] == "register")
         echo json_encode(
             array(
                 "message" => "Useri u ruajt me sukses",
-                "location" => "/"
+                "location" => "http://localhost/ecommerce/"
             ));
         exit;
     }

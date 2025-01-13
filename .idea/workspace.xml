@@ -5,21 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="922d1abd-acf7-4fff-b318-d2c871fcb2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/users_api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c528dd1-cf62-4d7a-92b9-0e4e770ba26d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecommerce1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecommerce1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax_payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax_payment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/auth/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/auth/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/auth/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/auth/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/auth/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/auth/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagesa_punonjes/paga.php" beforeDir="false" afterPath="$PROJECT_DIR$/pagesa_punonjes/paga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stripe_initialization.php" beforeDir="false" afterPath="$PROJECT_DIR$/stripe_initialization.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/PHPMailer/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -32,9 +48,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;programimw&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/programimw/ecommerce.git&quot;,
+    &quot;accountId&quot;: &quot;9b22c31e-a7e2-4b8f-8b42-2aebcb213463&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2o3pNgVMSk4hI139QttqgacUdHQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,17 +79,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Database Script.test_paga.sql.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "database.data.extractors.current.id": "SQL Inserts",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/xampp/htdocs/ecommerce1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -63,10 +104,27 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ecommerce\pagesa e punonjesve" />
       <recent name="C:\xampp\htdocs\ecommerce" />
       <recent name="C:\xampp\htdocs\ecommerce\Seminare\Seminar_CSS2" />
       <recent name="C:\xampp\htdocs\ecommerce\Seminare\Seminar CSS1" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test_paga.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/pagesa e punonjesve/test_paga.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="2c528dd1-cf62-4d7a-92b9-0e4e770ba26d" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PS-243.22562.233" />
+        <option value="bundled-php-predefined-a98d8de5180a-7980c7aaca61-com.jetbrains.php.sharedIndexes-PS-243.22562.233" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,6 +142,11 @@
       <workItem from="1731313771513" duration="2452000" />
       <workItem from="1731485749075" duration="7937000" />
       <workItem from="1733081587882" duration="16862000" />
+      <workItem from="1736098659450" duration="310000" />
+      <workItem from="1736099306192" duration="7000" />
+      <workItem from="1736099592943" duration="6644000" />
+      <workItem from="1736108240008" duration="5087000" />
+      <workItem from="1736324517686" duration="32654000" />
     </task>
     <servers />
   </component>
@@ -100,5 +163,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/functions.php</url>
+          <line>18</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\sendEmail" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
